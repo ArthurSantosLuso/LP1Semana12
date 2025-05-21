@@ -6,12 +6,12 @@ namespace HowManyOfThisType
     {
         private static void Main(string[] args)
         {
-            //object[] test = new object[3];
-            //test[0] = 2;
-            //test[1] = "aaa";
-            //test[2] = 100;
+            object[] test = new object[3];
+            test[0] = 2;
+            test[1] = "aaa";
+            test[2] = 100;
 
-            //Console.WriteLine(Checker.HowManyOfType<int>(test));
+            Console.WriteLine(Checker.HowManyOfType<int>(test));
         }
     }
 }
