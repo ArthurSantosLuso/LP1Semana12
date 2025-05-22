@@ -61,5 +61,23 @@ namespace JustLikeACollection
         {
             return GetEnumerator();
         }
+
+        public void Add(T item)
+        {
+            if(EqualityComparer<T>.Default.Equals(val1, default(T)))
+            {
+                val1 = item;
+            }
+
+            if (EqualityComparer<T>.Default.Equals(val2, default(T)))
+            {
+                val2 = item;
+            }
+
+            if (EqualityComparer<T>.Default.Equals(val3, default(T)))
+            {
+                val3 = item;
+            }
+        }
     }
 }
