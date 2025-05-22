@@ -13,7 +13,11 @@ namespace HowManyOfThisType
 
             Console.WriteLine(Checker.HowManyOfType<int>(test));
 
+<<<<<<< HEAD
             Console.WriteLine("Merci d’utiliser ce programme!");
+=======
+            Console.WriteLine("Obrigado por ter usado este programa!");
+>>>>>>> 6ea507c (Mensagem de agradecimendo adicionada.)
 
         }
     }
