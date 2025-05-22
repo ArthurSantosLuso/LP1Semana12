@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MyEnumerable
 {
-    public class Guarda3<T>
+    public class Guarda3<T> : IEnumerable<T>
     {
         private T val1;
         private T val2;
@@ -47,6 +48,18 @@ namespace MyEnumerable
         {
             if (i < 0 || i > 2)
                 throw new IndexOutOfRangeException();
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            yield return val1;
+            yield return val2;
+            yield return val3;
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }
