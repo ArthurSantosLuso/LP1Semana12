@@ -13,6 +13,8 @@ namespace HowManyOfThisType
 
             Console.WriteLine(Checker.HowManyOfType<int>(test));
 
+            Console.WriteLine("Merci d’utiliser ce programme!");
+
         }
     }
 }
