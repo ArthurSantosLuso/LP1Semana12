@@ -64,20 +64,12 @@ namespace JustLikeACollection
 
         public void Add(T item)
         {
-            if(EqualityComparer<T>.Default.Equals(val1, default(T)))
-            {
+            if (EqualityComparer<T>.Default.Equals(val1, default))
                 val1 = item;
-            }
-
-            if (EqualityComparer<T>.Default.Equals(val2, default(T)))
-            {
+            else if (EqualityComparer<T>.Default.Equals(val2, default))
                 val2 = item;
-            }
-
-            if (EqualityComparer<T>.Default.Equals(val3, default(T)))
-            {
+            else if (EqualityComparer<T>.Default.Equals(val3, default))
                 val3 = item;
-            }
         }
     }
 }
