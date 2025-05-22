@@ -12,6 +12,7 @@ namespace HowManyOfThisType
             test[2] = 100;
 
             Console.WriteLine(Checker.HowManyOfType<int>(test));
+
         }
     }
 }
